@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZK HTML网页编程服务介绍平台</title>
+    <style>
+        :root {
+            --primary-color: #1e88e5;
+            --secondary-color: #0d47a1;
+            --accent-color: #42a5f5;
+            --light-color: #e3f2fd;
+            --text-color: #333;
+            --white: #fff;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f9ff;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        
+        .price-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .price-card h3 {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+        
+        .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        .guarantee {
+            background-color: var(--light-color);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        
+        .terms-list {
+            padding-left: 20px;
+        }
+        
+        .terms-list li {
+            margin-bottom: 10px;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .step {
+            flex-basis: 18%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .step-number {
+            background-color: var(--primary-color);
+            color: var(--white);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .contact-info {
+            background-color: var(--light-color);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .contact-icon {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+        
+        .copyright {
+            font-size: 0.8em;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .process-steps {
+                flex-direction: column;
+            }
+            
+            .step {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HZK HTML网页编程服务介绍平台</h1>
+        <p>您的需求，我的代码！专业HTML网页/工具/小游戏开发</p>
+    </header>
+    
+    <section>
+        <h2>&#x1F4B0; 透明定价</h2>
+        <div class="price-card">
+            <h3>&#x1F3A8; 小代码程序</h3>
+            <p>个性按钮、特效动画、表单验证等小型HTML代码片段</p>
+            <div class="price">20元</div>
+            <span class="guarantee">2天无理由退款保障</span>
+        </div>
+        
+        <div class="price-card">
+            <h3>&#x1F6E0; 实用工具</h3>
+            <p>计算器、单位转换器、简易代办清单等实用HTML工具</p>
+            <div class="price">40元</div>
+            <span class="guarantee">2天无理由退款保障</span>
+        </div>
+        
+        <div class="price-card">
+            <h3>&#x1F3AE; 程序游戏</h3>
+            <p>贪吃蛇、记忆卡牌、简易答题游戏等HTML小游戏</p>
+            <div class="price">60元</div>
+            <span class="guarantee">2天无理由退款保障</span>
+        </div>
+        
+        <div class="price-card">
+            <h3>&#x1F4E6; 打包成APK</h3>
+            <p>将您的HTML项目打包成Android应用安装包（需要提供HTML源文件）</p>
+            <div class="price">30元</div>
+        </div>
+        
+        <div class="price-card">
+            <h3>&#x1F310; 附带子域名网址</h3>
+            <p>使用GitHub Pages为您的项目提供可访问的子域名网址</p>
+            <div class="price">10元</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>&#x2705; 接单承诺</h2>
+        <ul class="terms-list">
+            <li>绝不制作任何违法违规内容</li>
+            <li>先开发后付款，拒绝赖账（可走平台担保）</li>
+            <li>所有程序代码会存档记录，确保可追溯</li>
+            <li>版权归属您，开发者署名权归我（可协商）</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>&#x270D; 合作流程</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>描述需求</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>报价确认</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>支付费用</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>开发交付</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div>售后支持</div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>&#x1F31F; 服务优势</h2>
+        <ul class="terms-list">
+            <li><span class="highlight">代码规范</span> - 注释清晰，方便二次修改</li>
+            <li><span class="highlight">品质保证</span> - 专业开发，价格实惠</li>
+        </ul>
+    </section>
+    
+    <section class="contact-info">
+        <h2>&#x1F4E9; 联系方式</h2>
+        <div class="contact-item">
+            <span class="contact-icon">&#x1F4F1;</span>
+            <span>QQ(常用)：2237413947</span>
+        </div>
+        <div class="contact-item">
+            <span class="contact-icon">&#x1F4AC;</span>
+            <span>微信号：make_html</span>
+        </div>
+        <div class="contact-item">
+            <span class="contact-icon">&#x2709;</span>
+            <span>邮箱：hzk_team@163.com</span>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 HZK HTML网页编程服务介绍平台 保留所有权利</p>
+        <p class="copyright">本网站由HTML制作，未经允许，禁止模仿</p>
+    </footer>
+</body>
+</html>
